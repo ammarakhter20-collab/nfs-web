@@ -2,7 +2,8 @@ import HomeContent from '../components/HomeContent';
 
 async function getNews() {
   try {
-    const res = await fetch('http://127.0.0.1:8000/api/news/', { cache: 'no-store' });
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+    const res = await fetch(`${API_URL}/api/news/`, { cache: 'no-store' });
     if (!res.ok) return [];
     return res.json();
   } catch (error) {
@@ -13,7 +14,8 @@ async function getNews() {
 
 async function getGames() {
   try {
-    const res = await fetch('http://127.0.0.1:8000/api/games/', { cache: 'no-store' });
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://127.0.0.1:8000';
+    const res = await fetch(`${API_URL}/api/games/`, { cache: 'no-store' });
     if (!res.ok) return [];
     return res.json();
   } catch (error) {
