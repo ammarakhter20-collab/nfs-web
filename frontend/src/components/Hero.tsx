@@ -93,7 +93,7 @@ export default function Hero() {
                 controls 
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               >
-                <source src="/videos/trailer.mp4" type="video/mp4" />
+                <source src="/videos/trailer.mp4?v=2" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

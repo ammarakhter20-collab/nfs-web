@@ -12,7 +12,7 @@ const BackgroundVideo: React.FC = () => {
         playsInline
         className="global-bg-video"
       >
-        <source src="/videos/background.mp4" type="video/mp4" />
+        <source src="/videos/background.mp4?v=2" type="video/mp4" />
         {/* Fallback image if video fails */}
         <div className="global-bg-fallback"></div>
       </video>
